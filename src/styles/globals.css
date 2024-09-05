@@ -26,4 +26,16 @@ body {
   .section-wrapper {
     @apply w-full flex flex-col sm:flex-row justify-center items-center
   }
+
+  .width-responsif {
+    @apply w-full sm:w-[50%]
+  }
+
+  .testi-card {
+    @apply w-[300px] rounded-lg shadow-md p-5 bg-slate-50 border border-slate-200
+  }
+
+  .blog-card {
+    @apply border border-slate-300 rounded-lg p-4
+  }
 }

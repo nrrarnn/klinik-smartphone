@@ -1,13 +1,15 @@
 type PropsCard = {
-  children: React.ReactNode
+  name : string
+  description: string
 }
 
 const Card = (props:PropsCard ) => {
-  const { children } = props
+  const { name, description } = props
   return(
     <div className="w-[300px] rounded-lg shadow-lg">
       <div>Icon</div>
-      <div>{children}</div>
+      <div>{name}</div>
+      <div>{description}</div>
     </div>
   )
 }

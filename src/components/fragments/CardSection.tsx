@@ -1,7 +1,7 @@
 const CardSection = () => {
   return (
     <>
-      <div className="w-full max-w-6xl mx-auto rounded-2xl bg-white relative -top-16 px-6 sm:px-10 md:px-20 py-5 border border-slate-300">
+      <div className="w-full max-w-6xl mx-auto rounded-2xl bg-white relative -top px-6 sm:px-10 md:px-20 py-5 border border-slate-300">
         <div className="flex justify-between">
           <div>
             <h1 className="font-semibold text-5xl">10K</h1>
