@@ -17,3 +17,13 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .padding-x {
+    @apply px-6 sm:px-20
+  }
+
+  .section-wrapper {
+    @apply w-full flex flex-col sm:flex-row justify-center items-center
+  }
+}
