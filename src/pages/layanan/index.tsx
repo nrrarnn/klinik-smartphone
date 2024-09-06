@@ -5,7 +5,7 @@ const LayananPage = () => {
   return(
     <>
       <HeroBlog>
-        Layanan.
+        Layanan Kami
       </HeroBlog>
       <CardServices/>
     </>

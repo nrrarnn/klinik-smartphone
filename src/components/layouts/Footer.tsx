@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaWhatsapp, FaInstagram, FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
@@ -33,9 +34,9 @@ const Footer = () => {
           <div className="w-full md:w-1/4 mb-6">
             <h2 className="text-xl font-semibold mb-2">Ikuti Kami</h2>
             <div className="flex space-x-4 text-slate-100">
-              <a href="#" aria-label="Facebook"><FaTiktok className="w-6 h-6" /></a>
-              <a href="#" aria-label="Instagram"><FaInstagram className="w-6 h-6" /></a>
-              <a href="#" aria-label="WhatsApp"><FaWhatsapp className="w-6 h-6" /></a>
+              <Link href="https://www.tiktok.com/@iinifebri_" aria-label="Tiktok"><FaTiktok className="w-6 h-6" /></Link>
+              <Link href="https://www.instagram.com/majalaya.klinik_smartphone" aria-label="Instagram"><FaInstagram className="w-6 h-6" /></Link>
+              <Link href="https://wa.me/62895380084949" aria-label="WhatsApp"><FaWhatsapp className="w-6 h-6" /></Link>
             </div>
           </div>
         </div>

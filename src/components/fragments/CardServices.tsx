@@ -20,6 +20,7 @@ const CardServices = () => {
                   name={item.name}
                   description={item.description}
                   image={item.image}
+                  
                 />
               )
             })

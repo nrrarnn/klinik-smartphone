@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 py-5 px-6 sm:px-20 bg-transparent text-slate-800 flex justify-between items-center z-[9999] backdrop-blur-lg">
+    <nav className="fixed top-0 left-0 right-0 py-5 px-6 sm:px-20 bg-transparent text-slate-800 flex justify-between items-center z-[9999] backdrop-blur-xl">
       <div className="text-md font-bold">
         <span className="block">Klinik</span>
         <span className="block">Smartphone</span>
@@ -45,7 +45,7 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden sm:block">
-        <Button>Hubungi Kami</Button>
+        <Button><Link href={'https://wa.me/62895380084949'}>Hubungi Kami</Link></Button>
       </div>
 
       <ul
@@ -69,7 +69,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-2">
-          <Button onClick={toggleMenu}>Hubungi Kami</Button>
+          <Button><Link href={'https://wa.me/62895380084949'}>Hubungi Kami</Link></Button>
         </li>
       </ul>
     </nav>

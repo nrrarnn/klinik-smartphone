@@ -1,13 +1,16 @@
+import Link from "next/link";
+
 const ContactSection = () => {
-  return(
-    <>
-      <div className="w-full flex justify-center padding-x py-11 max-w-5xl mx-20 bg-blue-400 rounded-md my-10">
-        <div className="text-white text-center">
-          Masih ada pertanyaan? Jangan ragu untuk menghubungi kami! Tim kami siap membantu Anda kapan pun dibutuhkan. Hubungi kami melalui halaman kontak atau media sosial kami untuk informasi lebih lanjut.
+  return (
+    <div className="padding-x pb-8">
+      <div className="w-full max-w-6xl mx-auto rounded-lg bg-blue-400 relative px-6 sm:px-10 md:px-20 py-5 ">
+        <div className="section-wrapper justify-between gap-6 text-white">
+          <div className="width-responsif text-xl font-semibold">Punya pertanyaan terkait layanan kami? Jangan ragu untuk melakukan konsultasi!</div>
+          <button className="bg-blue-700 py-2 px-3 rounded-xl shadow-sm"><Link href={"https://wa.me/62895380084949"}>Konsultasi Sekarang</Link> </button>
         </div>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default ContactSection
+export default ContactSection;

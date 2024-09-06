@@ -12,7 +12,8 @@ const Card = (props: PropsCard) => {
   const { name, description, image } = props;
 
   return (
-    <div className="relative w-[300px] h-[300px] rounded-sm overflow-hidden shadow-lg group">
+    <div className="relative w-[300px] h-[300px] rounded-sm overflow-hidden shadow-lg group" data-aos="fade-up"
+      data-aos-duration="1500">
       <img
         src={`/img/${image}.jpg`}
         alt={name}

@@ -17,7 +17,8 @@ const WhyChoose = () => {
             pointOfInterest.map((point, index) => {
               const Icon = point.icon
               return (
-                <div key={index} className="flex flex-row items-center gap-2">
+                <div key={index} className="flex flex-row items-center gap-2" data-aos="fade-up"
+      data-aos-duration="2500">
                   <p className="p-4 text-xl font-bold rounded-full bg-blue-300/70">
                     <Icon/>
                   </p>

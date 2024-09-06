@@ -1,7 +1,8 @@
 const CardSection = () => {
   return (
-    <div className="padding-x">
-      <div className="w-full max-w-6xl mx-auto rounded-2xl bg-white relative px-6 sm:px-10 md:px-20 py-5 border border-slate-300 -top-10">
+    <div className="padding-x w-full">
+      <div className="w-full rounded-2xl bg-white relative px-6 sm:px-10 md:px-20 py-5 border border-slate-300 -top-10" data-aos="fade-up"
+      data-aos-duration="1500">
         <div className="flex flex-col md:flex-row justify-center items-center md:justify-between gap-5 sm:gap-8">
         <div className="text-center">
           <h1 className="font-semibold text-4xl sm:text-5xl">10K</h1>

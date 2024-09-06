@@ -36,11 +36,12 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto padding-x pt-10 pb-20">
+    <div className="w-full max-w-3xl padding-x pt-10 pb-20 mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-center">Pertanyaan Umum</h2>
       <div className="space-y-4">
         {faqItems.map((item, index) => (
-          <div key={index} className="bg-blue-50/50 p-4 rounded-lg shadow-md">
+          <div key={index} className="bg-blue-50/50 p-4 rounded-lg shadow-md" data-aos="fade-up"
+      data-aos-duration="2500">
             <div
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFAQ(index)}

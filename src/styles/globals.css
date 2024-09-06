@@ -34,6 +34,6 @@ body {
   }
 
   .blog-card {
-    @apply border border-slate-300 rounded-lg p-4
+    @apply border border-slate-300 rounded-lg max-w-[400px]
   }
 }
