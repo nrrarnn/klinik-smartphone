@@ -1,26 +1,29 @@
 import Image from "next/image"
+import { ElementType } from "react"
+import { FaStar, FaTags, FaShieldAlt } from "react-icons/fa";
 type PointOfInterest = {
   title: string
   description: string
-  icon: string
+  icon: ElementType
 }
 
 const WhyChoose = () => {
   return (
     <div className="section-wrapper padding-x gap-6 py-10">
-      <div className="w-full sm:w-[50%] flex justify-center">
+      <div className="width-responsif flex justify-center">
         <div className="flex flex-col gap-3">
-          <h1 className=" font-bold text-slate-700 text-2xl">Kenapa memilih kami?</h1>
+          <h1 className=" font-bold text-slate-800 text-3xl">Kenapa memilih kami?</h1>
           {
             pointOfInterest.map((point, index) => {
+              const Icon = point.icon
               return (
                 <div key={index} className="flex flex-row items-center gap-2">
-                  <p className="p-4 text-xl font-bold rounded-full bg-blue-300">
-                    <img src={`${point.icon}`} alt="why choose icon" width={40} height={40}/>
+                  <p className="p-4 text-xl font-bold rounded-full bg-blue-300/70">
+                    <Icon/>
                   </p>
                   <div>
-                    <p className="text-slate-700">{point.title}</p>
-                    <p>{point.description}</p>
+                    <p className="text-slate-800 font-bold text-[19px]">{point.title}</p>
+                    <p className="text-slate-700">{point.description}</p>
                   </div>
                 </div>
               )
@@ -28,7 +31,7 @@ const WhyChoose = () => {
           }
         </div>
       </div>
-      <div className="w-full sm:w-[50%] flex justify-center">
+      <div className="width-responsif flex justify-center">
         <div className="w-[400px] relative rounded-tl-full rounded-bl-full bg-blue-300/50">
           <Image src="/img/why-choose.png" alt="why choose image" className="shadhow-lg" width={400} height={400} />
         </div>
@@ -41,17 +44,17 @@ const pointOfInterest: PointOfInterest[] = [
   {
     title: "Layanan Cepat dan Berkualitas",
     description: "Kami menawarkan perbaikan smartphone dengan waktu layanan yang cepat tanpa mengorbankan kualitas.",
-    icon: "https://cdn-icons-png.flaticon.com/512/1214/1214428.png",
+    icon: FaStar,
   },
   {
-    title: "Layanan Cepat dan Berkualitas",
-    description: "Kami menawarkan perbaikan smartphone dengan waktu layanan yang cepat tanpa mengorbankan kualitas.",
-    icon: "https://cdn-icons-png.flaticon.com/512/1214/1214428.png",
+    title: "Garansi Kepuasan Pelanggan",
+    description: "Kepuasan Anda adalah tujuan utama kami. Kami memberikan garansi atas setiap layanan yang kami berikan.",
+    icon: FaTags,
   },
   {
-    title: "Layanan Cepat dan Berkualitas",
-    description: "Kami menawarkan perbaikan smartphone dengan waktu layanan yang cepat tanpa mengorbankan kualitas.",
-    icon: "https://cdn-icons-png.flaticon.com/512/1214/1214428.png",
+    title: "Harga Terjangkau",
+    description: "Kami menawarkan layanan berkualitas dengan harga yang kompetitif tanpa mengurangi kualitas hasil perbaikan.",
+    icon: FaShieldAlt,
   }
 ]
 

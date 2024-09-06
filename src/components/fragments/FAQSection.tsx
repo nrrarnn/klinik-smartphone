@@ -10,20 +10,20 @@ const FAQSection = () => {
 
   const faqItems: FAQItem[] = [
     {
-      question: "What is a smartphone clinic?",
-      answer: "A smartphone clinic is a service center that specializes in repairing and maintaining smartphones.",
+      question: "Berapa lama waktu yang dibutuhkan untuk perbaikan?",
+      answer: "Waktu perbaikan bervariasi tergantung pada jenis layanan dan tingkat kerusakan. Biasanya, perbaikan sederhana seperti penggantian layar memerlukan waktu 1-2 jam, sementara perbaikan lebih kompleks bisa memakan waktu hingga 24 jam.",
     },
     {
-      question: "How long does a typical repair take?",
-      answer: "Most repairs take between 30 minutes to 1 hour, depending on the complexity of the issue.",
+      question: "Apakah Anda memberikan garansi untuk layanan yang dilakukan?",
+      answer: "Ya, kami memberikan garansi untuk semua layanan perbaikan yang dilakukan. Garansi mencakup masalah yang sama yang diperbaiki dan berlaku untuk jangka waktu tertentu setelah perbaikan. Untuk detail lebih lanjut, silakan baca kebijakan garansi kami di sini.",
     },
     {
-      question: "Do you offer warranty for repairs?",
-      answer: "Yes, we offer a 30-day warranty on all repairs for parts and service quality.",
+      question: "Berapa biaya untuk perbaikan smartphone?",
+      answer: "Biaya perbaikan bervariasi tergantung pada jenis kerusakan dan model smartphone. Untuk estimasi biaya, Anda bisa menghubungi kami langsung untuk konsultasi",
     },
     {
-      question: "Can you repair water-damaged phones?",
-      answer: "Yes, we can attempt to fix water-damaged phones. However, the success of the repair depends on the extent of the damage.",
+      question: "Apakah data saya aman selama proses perbaikan?",
+      answer: "Kami menjaga keamanan data dan perangkat Anda selama proses perbaikan. Tim kami akan memastikan bahwa data Anda tidak diakses atau diubah tanpa izin Anda.",
     },
   ];
 
@@ -36,11 +36,11 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-4">
-      <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+    <div className="w-full max-w-3xl mx-auto padding-x pt-10 pb-20">
+      <h2 className="text-3xl font-bold mb-6 text-center">Pertanyaan Umum</h2>
       <div className="space-y-4">
         {faqItems.map((item, index) => (
-          <div key={index} className="bg-gray-100 p-4 rounded-lg shadow-md">
+          <div key={index} className="bg-blue-50/50 p-4 rounded-lg shadow-md">
             <div
               className="flex justify-between items-center cursor-pointer"
               onClick={() => toggleFAQ(index)}

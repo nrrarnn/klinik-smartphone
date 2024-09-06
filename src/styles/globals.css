@@ -3,13 +3,11 @@
 @tailwind utilities;
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Gantari', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
@@ -24,11 +22,11 @@ body {
   }
 
   .section-wrapper {
-    @apply w-full flex flex-col sm:flex-row justify-center items-center
+    @apply w-full flex flex-col md:flex-row justify-center items-center
   }
 
   .width-responsif {
-    @apply w-full sm:w-[50%]
+    @apply w-full md:w-[50%]
   }
 
   .testi-card {
