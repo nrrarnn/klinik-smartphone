@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <HeroSection/>
       <CardSection/>
-      {/* <AboutSection/> */}
+      <AboutSection/>
       <WhyChoose/>
       <ServicesSection/>
       {/* <Testimoni/> */}

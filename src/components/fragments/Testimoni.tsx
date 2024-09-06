@@ -16,8 +16,8 @@ const Testimoni = () => {
           <h1 className="text-5xl font-bold text-slate-800">Apa Kata Pelanggan</h1>
           <p className="pt-3 text-slate-700 text-[14px] w-[80%]">Kami selalu berusaha memberikan yang terbaik untuk setiap pelanggan. Testimoni ini adalah bukti nyata bahwa layanan kami mampu memenuhi harapan mereka.</p>
         </div>
-        <div className="width-responsif mt-4">
-          <div className="section-wrapper gap-3">
+        <div className="width-responsif flexjustify-between">
+          <div className="section-wrapper">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard 
                 key={index}
