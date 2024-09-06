@@ -3,12 +3,12 @@ import React from 'react';
 type TestimonialCardProps = {
   quote: string;
   author: string;
-  photo?: string; // Foto pelanggan opsional
+  photo?: string; 
 };
 
 const TestimonialCard = ({ quote, author, photo }: TestimonialCardProps) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg border hover:border-slate-300 hover:shadow-xl transition-all duration-300" data-aos="zoom-in-left"
+    <div className="w-full bg-white p-6 rounded-lg shadow-lg border hover:border-slate-300 hover:shadow-xl transition-all duration-300" data-aos="zoom-in-left"
       data-aos-duration="1500">
       <div className="flex items-center mb-4">
         {photo && (
