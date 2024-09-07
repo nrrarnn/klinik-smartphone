@@ -9,7 +9,7 @@ type TestimonialCardProps = {
 const TestimonialCard = ({ quote, author, photo }: TestimonialCardProps) => {
   return (
     <div className='p-3'>
-      <div className="w-[300px] h-[200px] bg-white p-6 rounded-lg shadow-lg border hover:border-slate-300 hover:shadow-xl transition-all duration-300" data-aos="zoom-in-left"
+      <div className="bg-white p-6 rounded-lg shadow-lg border hover:border-slate-300 hover:shadow-xl transition-all duration-300" data-aos="zoom-in-left"
         data-aos-duration="1500">
         <div className="flex items-center pb-4">
           {photo && (
