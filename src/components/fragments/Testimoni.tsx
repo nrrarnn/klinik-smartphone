@@ -9,15 +9,14 @@ type Testimonial = {
 const Testimoni = () => {
   return(
     <>
-      <div className="padding-x section-wrapper bg-slate-100 py-20">
-        <div className="width-responsif" data-aos="fade-down"
-      data-aos-duration="1500">
+      <div className="section-wrapper padding-x pt-32 md:pt-20 pb-10">
+        <div className="width-responsif items-center">
           <h6 className="text-slate-700 font-bold">Testimoni</h6>
           <h1 className="text-5xl font-bold text-slate-800">Apa Kata Pelanggan</h1>
           <p className="pt-3 text-slate-700 text-[14px] w-[80%]">Kami selalu berusaha memberikan yang terbaik untuk setiap pelanggan. Testimoni ini adalah bukti nyata bahwa layanan kami mampu memenuhi harapan mereka.</p>
         </div>
-        <div className="width-responsif flexjustify-between">
-          <div className="section-wrapper">
+        <div className="width-responsif">
+          <div className="section-wrapper gap-0 md:gap-3">
             {testimonials.map((testimonial, index) => (
               <TestimonialCard 
                 key={index}
@@ -25,7 +24,7 @@ const Testimoni = () => {
                 author={testimonial.author}
                 photo={testimonial.photo}
               />
-        ))}
+            ))}
           </div>
         </div>
       </div>
