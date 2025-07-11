@@ -22,9 +22,9 @@ const CardBlog = () => {
                 </div>
                 <div className="p-4">
                   <h1 className="text-2xl font-bold text-slate-800">{item.title}</h1>
-                  <p>{item.description}</p>
+                  <p className="text-slate-700">{item.description}</p>
                   <Link href={`/blog/${item.id}`} className="">
-                    <button className="text-blue-500 hover:underline">Lihat Selengkapnya</button>
+                    <button className="text-blue-600 hover:underline">Lihat Selengkapnya</button>
                   </Link>
                 </div>
               </div>
@@ -33,9 +33,9 @@ const CardBlog = () => {
         }
       </div>
       <div className="py-10 flex justify-center">
-        <Button>
+        <button className="button-style">
           <Link href="/" className="flex justify-center items-center "><FaHome className="mr-2"/> Kembali</Link> 
-        </Button>
+        </button>
       </div>
     </>
   )

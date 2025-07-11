@@ -27,9 +27,9 @@ const CardServices = () => {
           }
       </div>
       <div className="pt-10 flex justify-center">
-        <Button>
+        <button className="button-style">
           <Link href="/" className="flex justify-center items-center "><FaHome className="mr-2"/> Kembali</Link> 
-        </Button>
+        </button>
       </div>
     </div>
   )

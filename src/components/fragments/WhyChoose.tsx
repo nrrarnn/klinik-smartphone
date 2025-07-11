@@ -19,8 +19,8 @@ const WhyChoose = () => {
               return (
                 <div key={index} className="flex flex-row items-center gap-2" data-aos="fade-up"
       data-aos-duration="2500">
-                  <p className="p-4 text-xl font-bold rounded-full bg-blue-300/70">
-                    <Icon/>
+                  <p className="p-4 text-xl font-bold rounded-full bg-blue-100/70">
+                    <Icon className="w-[30px] h-[30px] text-blue-600" />
                   </p>
                   <div>
                     <p className="text-slate-800 font-bold text-[19px]">{point.title}</p>

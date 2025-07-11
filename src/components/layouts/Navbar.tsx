@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <div className="sm:hidden">
         <button onClick={toggleMenu} className="text-2xl focus:outline-none transition-transform duration-300">
-          {isMenuOpen ? <CgClose className="w-[35px] h-[35px]"  /> : <CgMenuRightAlt className="w-[35px] h-[35px]" />}
+          {isMenuOpen ? <CgClose className="w-[35px] h-[35px]" /> : <CgMenuRightAlt className="w-[35px] h-[35px]" />}
         </button>
       </div>
 
@@ -45,14 +45,12 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden sm:block">
-        <Button><Link href={'https://wa.me/62895380084949'}>Hubungi Kami</Link></Button>
+        <button className="button-style">
+          <Link href={"https://wa.me/62895380084949"}>Hubungi Kami</Link>
+        </button>
       </div>
 
-      <ul
-        className={`${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } absolute top-20 left-0 right-0 bg-white text-center py-5 sm:hidden transition-transform duration-300 ease-in-out z-50`}
-      >
+      <ul className={`${isMenuOpen ? "translate-x-0" : "translate-x-full"} absolute top-20 left-0 right-0 bg-white text-center py-5 sm:hidden transition-transform duration-300 ease-in-out z-50`}>
         <li className="py-2 hover:text-blue-400">
           <Link href="/" onClick={toggleMenu}>
             Beranda
@@ -69,11 +67,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-2">
-          <Button><Link href={'https://wa.me/62895380084949'}>Hubungi Kami</Link></Button>
+          <button className="button-style">
+            <Link href={"https://wa.me/62895380084949"}>Hubungi Kami</Link>
+          </button>
         </li>
       </ul>
     </nav>
-
   );
 };
 

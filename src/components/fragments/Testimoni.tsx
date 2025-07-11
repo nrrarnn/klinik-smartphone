@@ -3,7 +3,7 @@ import TestimonialCard from "./TestimonialCard";
 type Testimonial = {
   quote: string;
   author: string;
-  photo?: string; // Foto opsional
+  photo?: string; 
 };
 
 const Testimoni = () => {
@@ -13,7 +13,7 @@ const Testimoni = () => {
         <div className="width-responsif items-center">
           <h6 className="text-slate-700 font-bold">Testimoni</h6>
           <h1 className="text-5xl font-bold text-slate-800">Apa Kata Pelanggan</h1>
-          <p className="pt-3 text-slate-700 text-[14px] px-3">Kami selalu berusaha memberikan yang terbaik untuk setiap pelanggan. Testimoni ini adalah bukti nyata bahwa layanan kami mampu memenuhi harapan mereka.</p>
+          <p className="pt-3 text-slate-700 text-[14px]">Kami selalu berusaha memberikan yang terbaik untuk setiap pelanggan. Testimoni ini adalah bukti nyata bahwa layanan kami mampu memenuhi harapan mereka.</p>
         </div>
         <div className="width-responsif">
           <div className="section-wrapper">

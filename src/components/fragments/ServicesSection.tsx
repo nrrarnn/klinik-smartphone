@@ -26,9 +26,9 @@ const ServicesSection = () => {
           }
       </div>
       <div className="pt-10 flex justify-center">
-        <Button>
+        <button className="button-style">
           <Link href="/layanan">Lihat Selengkapnya</Link> 
-        </Button>
+        </button>
       </div>
     </div>
   )
