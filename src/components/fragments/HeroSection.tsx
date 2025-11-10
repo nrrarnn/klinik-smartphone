@@ -34,7 +34,7 @@ const HeroSection = () => {
         <div className=" mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="space-y-8" data-aos="fade-up" data-aos-duration="1000">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-medium text-blue-700">
+              <div className="inline-flex mt-3 items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-medium text-blue-700">
                 <span className="w-2 h-2 bg-blue-500 rounded-full mr-2 animate-pulse"></span>
                 Layanan Profesional Terpercaya
               </div>
