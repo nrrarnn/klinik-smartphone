@@ -64,7 +64,7 @@ const Footer = () => {
     },
     {
       name: "WhatsApp",
-      href: "https://wa.me/62895380084949",
+      href: "https://wa.me/62895400903748",
       icon: FaWhatsapp,
       color: "hover:text-green-400 hover:bg-green-400/10",
       bgGradient: "from-green-500 to-green-600",
